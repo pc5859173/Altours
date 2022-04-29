@@ -1,0 +1,283 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<br />
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img style="height:400px;width:600px;"  src="https://media.istockphoto.com/photos/taj-mahal-mausoleum-in-agra-picture-id1146517111?k=20&m=1146517111&s=612x612&w=0&h=vHWfu6TE0R5rG6DJkV42Jxr49aEsLN0ML-ihvtim8kk=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+
+                <h1>Altour With Us</h1>
+                <p> <h3>Discover your next holiday destination</h3></p>
+            </div>
+        </div>
+    </div>
+    <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>-->
+</div>
+
+<br />
+<h1 style="text-align:center;font-size:40px;">Top Most Holiday Destinations For You.</h1>
+<br />
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'lehladakh' %}">
+                <img src="https://media.istockphoto.com/photos/landscape-of-snow-mountains-and-mountain-road-to-nubra-valley-in-leh-picture-id1061972184?b=1&k=20&m=1061972184&s=170667a&w=0&h=5uMJ0xdCTuYrLix-B6O7J183kG7lM4f8_DwjmBskbHQ=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                <h5 class="card-title">Leh - Ladakh</h5>
+                <p class="card-text">Leh is the joint capital and largest city of the union territory of Ladakh in India.Ladakh is a rustic and heavenly beautiful travel destination. </p>
+                <a href="{% url 'lehladakh' %}" class="btn btn-warning">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/small-hut-on-top-of-a-mountain-in-janjehli-valley-picture-id542688920?k=20&m=542688920&s=612x612&w=0&h=F7huA-rpR418vs-6eXFtf6lOfbnm75o7PjQ_e-Dey2c=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Manali</h5>
+                    <p class="card-text">Manali is a town in the Indian state of Himachal Pradesh, it is a popular tourist spot for Indians in summer and a magical, snow-covered place in winter.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'odisha' %}">
+                <img src="https://media.istockphoto.com/photos/old-old-temple-in-bhubaneswar-india-picture-id586049140?k=20&m=586049140&s=612x612&w=0&h=DnScF028PzPOA-D-l6tl0NiNj25gXNo8yuOrFjSrW20=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Odisha</h5>
+                    <p class="card-text"> Odisha, the eastern coast of Indian state is well-known to world for its alive traditions and culture. Gaining recognition as a pilgrimage destination.</p>
+                    <a href="{% url 'odisha' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'gangtok' %}">
+                <img src="https://media.istockphoto.com/photos/view-of-gangtok-the-capital-city-of-sikkim-india-picture-id606223864?k=20&m=606223864&s=612x612&w=0&h=RqEIcDcAR7SJmfwRjcIMavxsVGpX7oE6OhEzmqOFzdY=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Gangtok</h5>
+                    <p class="card-text">The capital of the state of Sikkim, Gangtok is an attractive tourist destination, reflecting a unique ambience which derives from its happy blend of tradition and modernity</p>
+                    <a href="{% url 'gangtok' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'shimla' %}">
+                <img src="https://media.istockphoto.com/photos/the-kalka-to-shimla-railway-is-a-2-ft-6-in-narrowgauge-railway-in-picture-id1223612773?k=20&m=1223612773&s=612x612&w=0&h=BXBnyuqTtsyi-Y9tQP1OUSJ1l3Ce1bqIHhQjHwvHOdE=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Shimla</h5>
+                    <p class="card-text">Snow-capped Himalayan peaks and green pastures surround Shimla, the capital of Himachal Pradesh.Shimla was a retreat destination for Mahatma Gandhi. </p>
+                    <a href="{% url 'shimla' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'mathura' %}">
+                <img src="https://media.istockphoto.com/photos/keshi-ghat-krishna-temple-vrindavan-picture-id1322198090?k=20&m=1322198090&s=612x612&w=0&h=bdNv52DDjJB4GjwpQQDue-0pAtEKarZdnhC3cKfmS6A=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Mathura</h5>
+                    <p class="card-text">One of Hinduism's seven sacred cities, Mathura is the birthplace of the very beloved Lord Krishna. Located in the state of Uttar Pradesh.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'jaipur' %}">
+                <img src="https://media.istockphoto.com/photos/eve-expensive-picture-id673504598?k=20&m=673504598&s=612x612&w=0&h=k5-eofelOJXfZ4yhhF6v2IOGCNijIYRncMA_LffFeME=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Jaipur</h5>
+                    <p class="card-text">Also called the Pink City, Jaipur is the capital of the royal state of Rajasthan. Along with Delhi and Agra, Jaipur forms the Golden Triangle.</p>
+                    <a href="{% url 'jaipur' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'kashmir' %}">
+                <img src="https://media.istockphoto.com/photos/gandola-cable-car-in-gulmarg-picture-id665366534?k=20&m=665366534&s=612x612&w=0&h=FuicPMtpK6zAlA3BMlpYmMFPx5C9Li0hjGxtIruhz8g=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kashmir</h5>
+                    <p class="card-text">The valley of Kashmir is as rich with history and political controversy as it is with culture and natural phenomena.It is famously known as the "Paradise on Earth"</p>
+                    <a href="{% url 'kashmir' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'amritsar' %}">
+                <img src="https://media.istockphoto.com/photos/golden-temple-in-amritsar-punjab-india-picture-id535570117?b=1&k=20&m=535570117&s=170667a&w=0&h=9rgPC4OeO42sioZFAwbgLoT3Lr_jdnzykqJ8oDk_af8=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Amritsar</h5>
+                    <p class="card-text">Home of the glorious Golden Temple, the iconic city of Amritsar, portrays the heroic character of Punjab. The second-largest city of the Indian state of Punjab</p>
+                    <a href="{% url 'amritsar' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/tea-plantations-picture-id1160316337?b=1&k=20&m=1160316337&s=170667a&w=0&h=j1Z1Z316HDQqKO6EzhI8mtkcwVT_ZSWzjpU5r-AIhXU=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Munnar</h5>
+                    <p class="card-text"> Munnar is a hill station in Kerala, located in the Idukki district. Lying in the Western Ghats at 1600 metres.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/kedarnath-in-india-picture-id515855602?b=1&k=20&m=515855602&s=170667a&w=0&h=rPtaGe5s9J3roDggwnXnnxTiUTWaAqxCoIJb1jqRLLo=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kedarnath</h5>
+                    <p class="card-text">Located at the base of white, snow-laden peaks in Uttarakhand, and home to one of the most iconic of the Char Dham temples.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/one-of-the-best-beaches-in-goa-cola-beach-picture-id857389362?b=1&k=20&m=857389362&s=170667a&w=0&h=px0EbbF8Ap96U3Zb7KbUGH2XrRfs47tiGwQSG6FhJmU=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Goa Tourism</h5>
+                    <p class="card-text">Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/plaza-murillo-lapaz-picture-id530937278?k=20&m=530937278&s=612x612&w=0&h=xCmqbRV1-l2sijYr4GDG9_Kd9NdA4SV7AzeJJNfM-TM=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kolkata</h5>
+                    <p class="card-text">Kolkata, India's second biggest city, is a perpetually ongoing festival of human existence,Famously known as the City of Joy. </p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/city-palace-udaipur-picture-id477993744?k=20&m=477993744&s=612x612&w=0&h=1zKaa33OwkEjXheywzNCbHfb0rxXxG6VLJT10Bk5SDc=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Udaipur</h5>
+                    <p class="card-text">Udaipur, also known as the City of Lakes, is one of the most visited tourist places in Rajasthan.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/gwalior-fort-or-gwalior-qila-india-picture-id1334740333?b=1&k=20&m=1334740333&s=170667a&w=0&h=OTKMIxxjGIg-mYIQyuCDrT2kbDl4lL1IU7Uil98RljQ=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Gwalior</h5>
+                    <p class="card-text">Gwalior was once not only the capital of Scindias but is also a historically rich and one of the most popular cities of MP.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/cityscape-of-sarajevo-bosnia-and-herzegovina-picture-id506130747?k=20&m=506130747&s=612x612&w=0&h=8JHy82bvbXcaT7I_rdPWxpqDrRBT60C_5xDQlUkzUGY=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Ooty</h5>
+                    <p class="card-text">Nestled amidst Nilgiri hills, Ooty, also known as Udagamandalam, is a hill station in Tamil Nadu which serves as a top-rated tourist destination.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="">
+                <img src="https://media.istockphoto.com/photos/mountain-road-in-eastern-himalaya-picture-id1143718082?k=20&m=1143718082&s=612x612&w=0&h=Wlf1CZtC7-JlqGwc_HLJojn8ssHaJAcI-7RNBhOGl2I=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Darjeeling</h5>
+                    <p class="card-text">Darjeeling conjures visions of snow peaks, serenity of vibrant green hills steeped in splendour, a land of breathtaking beauty crowned by the majestic Himalayas.</p>
+                    <a href="" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+    <div class="col col-sm-4">
+        <div class="card">
+            <a href="{% url 'hampi' %}">
+                <img src="https://media.istockphoto.com/photos/hampi-stone-chariot-the-antique-stone-art-piece-from-unique-angle-picture-id1270774245?k=20&m=1270774245&s=612x612&w=0&h=L6wkXK6eBGDv1_wTwBjYYvsKg3Z3dTaDnPdJinaJS4E=" class="card-img-top" alt="...">
+            </a>
+                <div class="card-body">
+                    <h5 class="card-title">Hampi</h5>
+                    <p class="card-text">Hampi, the city of ruins, is a UNESCO World Heritage Site. Situated in the shadowed depth of hills and valleys in the state of Karnataka.</p>
+                    <a href="{% url 'hampi' %}" class="btn btn-warning">Read More</a>
+                </div>
+        </div>
+    </div>
+</div>
+<br />
+
+{% endblock %}

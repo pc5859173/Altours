@@ -1,0 +1,229 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Goa</title>
+
+</head>
+<body>
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border bg-light">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.istockphoto.com/photos/the-beach-picture-id157579910?k=20&m=157579910&s=612x612&w=0&h=2mk--eELAC90MQa7K3QxUGAs3ibdSSRVjv2mlM3h-BU=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Goa,India</h5>
+                                    <!--<p>Buddhist monument at Sanchi, Madhya Pradesh, India</p>-->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.istockphoto.com/photos/fishing-nets-on-calangute-beach-goa-india-picture-id1169515139?k=20&m=1169515139&s=612x612&w=0&h=k5bBduhidz5ufQZxTM1YSgME_SnDc0KQLTzEPBRdy6Q=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5> Calangute Beach - Largest Beach in North Goa, India</h5>
+                                    <!--<p>Some representative placeholder content for the second slide.</p>-->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Baga Beach,Goa,India</h5>
+                                    <!--<p>Some representative placeholder content for the third slide.</p>-->
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">
+                    <h1 style="font-size:30px;">Goa,India</h1>
+                    <h6>
+                        Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture. Spread across just 3,702 km, Goa lies in the Konkan region. It is a far cry from the hippie haven or a beach getaway, and one of the only few destinations that is open 24x7. The laid-backness (susegad) of Goa attracts as many international tourists as it does Indians, or even more so.The Goans are quite friendly towards tourists and celebrate many festivals throughout the year, the most famous being the New Year and Goa Carnival. While the seafood is excellent, Goa has one of the best nightlife in India with trendy bars, beach shacks, elegant cafes and many clubs and discotheques. Thanks to lower alcohol prices in the state, Goa is also great for younger tourists with relatively tighter pockets.
+
+                        For those of us perpetually confused between North Goa and South Goa, this might help - the state of Goa is divided into North Goa and South Goa. While North Goa is the nightlife hub where all the touristy beaches, flea markets, and beach shacks are located, South Goa is the land of luxurious resorts and laid-back beach vibes.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 style="text-align:center;font-size:50px">Top Places to Visit In Goa</h1>
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/panoramic-view-of-palolem-beach-in-south-goa-picture-id1126114956?k=20&m=1126114956&s=612x612&w=0&h=v1WYt6G8c6RsCX8AsioSoghEciInSKFDdj5_ZP2IEZI=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Calangute Beach</h4>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/aguada-fort-ancient-fortress-on-the-shores-of-the-indian-ocean-goa-picture-id1254741626?k=20&m=1254741626&s=612x612&w=0&h=_mYQ4wBORtTHaBK_ygm74VTGA_U1uUKO2co_bo3KLmw=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Fort Aguada</h4>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/beautiful-cruise-ship-at-night-in-the-see-picture-id1027966034?k=20&m=1027966034&s=612x612&w=0&h=X_iokIJrOTu7Gv3DJwn62hda3tYMLEGYii2JQovhLdw=" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Cruise in Goa</h4>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/amazing-shot-at-sunset-of-parasailing-water-amusement-picture-id1127810308?k=20&m=1127810308&s=612x612&w=0&h=O_uvxe9JGAmhUzAYM8sWZyY2FZBp8n82qtWQvGUWR-M=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title"> Water Sports in Goa</h4>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/the-huge-waterfall-dudhsagar-and-the-railway-bridge-passing-through-picture-id1200790835?k=20&m=1200790835&s=612x612&w=0&h=TMlYlEIfQCu1G2DiT3bd0C7G6Vxn7Wn2gWwc9tW0qtc=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Dudhsagar Waterfalls</h4>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/anjuna-beach-goa-india-picture-id1136485476?k=20&m=1136485476&s=612x612&w=0&h=DXAYdbM-YQNRQ-ArflPItztpVjzbMjT2f5XOFYfB9jw=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">Anjuna Beach</h4>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center; font-size:50px">Top Hotels In Goa</h1>
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="{% url 'goahotels' %}">
+                    <img src="https://media.istockphoto.com/photos/traditional-asian-colorful-long-tail-boat-picture-id629412690?k=20&m=629412690&s=612x612&w=0&h=ud1P1vfwj8SFXshV2c_esxgKItPu70-NuBS_qY0X8Kk=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title" style="font-size:20px; font-style:normal;"> 23 Resorts In Goa</h3>
+                    <h3 class="subtitle" style="color:gray;">
+
+                        <span style="color:green;">
+                            <b> ₹ 11,050 </b>
+                            ownwards
+                        </span>
+                    </h3>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="{% url 'goahotels' %}">
+                    <img src="https://media.istockphoto.com/photos/small-hotel-surrounded-by-trees-on-a-hill-picture-id453414781?k=20&m=453414781&s=612x612&w=0&h=nHWpq8AFBrYBUwR-FhMmQ0ZpLNiRH1TMgdu2_Fm8Py4=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title" style="font-size:20px; font-style:normal;"> 29 Villas In Goa</h3>
+                    <h3 class="subtitle" style="color:gray;">
+
+                        <span style="color:green;">
+                            <b> ₹ 15,649 </b>
+                            ownwards
+                        </span>
+                    </h3>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="{% url 'goahotels' %}">
+                    <img src="https://media.istockphoto.com/photos/shooting-in-the-morning-empty-tropical-beach-picture-id535298621?k=20&m=535298621&s=612x612&w=0&h=1AfPhhsPP7u7pU2I8ygz3EQhD-XJRZG_RoCBbDyQKt0=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title" style="font-size:20px; font-style:normal;"> 27 Beach Resorts In Goa For a Gateway</h3>
+                    <h3 class="subtitle" style="color:gray;">
+
+                        <span style="color:green;">
+                            <b> ₹ 10,030 </b>
+                            ownwards
+                        </span>
+                    </h3>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+          <div class="d-grid gap-2" href="{% url 'goahotels' %}">
+              
+                  <button class="btn btn-success" type="button">View More Hotels In Goa</button>
+                  <!--<button class="btn btn-primary" type="button">Button</button>-->
+        
+          </div>
+
+</body>
+</html>
+
+{% endblock %}

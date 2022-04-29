@@ -1,0 +1,320 @@
+{% extends "app/layout.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Madhaya Pradesh</title>
+    <style>
+        .rating-badge {
+            background: #237c74;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-family: manrope bold,sans-serif;
+            font-size: 14px;
+            line-height: 1.7rem;
+            display: inline-block;
+        }
+        
+        
+    </style>
+   
+</head>
+<body>
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border bg-light">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.istockphoto.com/photos/view-of-stupa-1-ancient-buddhist-monument-at-sanchi-madhya-pradesh-picture-id1311345538?k=20&m=1311345538&s=612x612&w=0&h=E8AjqBeR-mQY9iCJ-u4KyMSWwhkOYgPyaYc2wo5eS6U=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Buddhist monument at Sanchi, Madhya Pradesh, India</h5>
+                                    <!--<p>Buddhist monument at Sanchi, Madhya Pradesh, India</p>-->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.istockphoto.com/photos/male-bengal-tiger-picture-id532262600?k=20&m=532262600&s=612x612&w=0&h=FjPvxXCHRRBfBLdU0PnEHauojKfUsQNO-YYg53rAkjA=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5> Bandhavgarh national park,Madhya Pradesh, India</h5>
+                                    <!--<p>Some representative placeholder content for the second slide.</p>-->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.istockphoto.com/photos/devi-jagdambi-temple-khajuraho-unesco-world-heritage-site-picture-id542316008?k=20&m=542316008&s=612x612&w=0&h=EUUtoAFdZl-M49Y1ZOymO-3d3vMlRk5tjZEvugdvRZk=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Temples of Khajuraho, Madhya Pradesh, India</h5>
+                                    <!--<p>Some representative placeholder content for the third slide.</p>-->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://media.istockphoto.com/photos/jahaz-mahalship-palace-in-mandu-india-picture-id668729904?k=20&m=668729904&s=612x612&w=0&h=i7INbpj9bD6wI46voVj2LrDbKcKkKbEz-ddIanIPM0A=" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Jahaz Mahal (called Ship Palace in english) in Mandu, Madhya Pradesh, India</h5>
+                                    <!--<p>Some representative placeholder content for the third slide.</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-light">
+                    <h1 style="font-size:30px;">Madhya Pradesh,India</h1>
+                    <div class="">
+                        <span class="rating-badge" style="background-color:#9acc2b;">
+                            <b>3.5</b>
+                            <span class="light"> /5</span>
+                        </span>
+                    </div>
+                    <h2>India</h2>
+                    <h2>Heritage | Religious </h2><br />
+                    <br />
+                    <!--<img src="../../static/app/fonts/rating.png" />-->
+                    <div class="row no-gutters objective-information">
+                        <div class="col-12 col-md-6 d-md-none">
+                            <div class="mb-2">
+                                <p class="d-inline-block"><b>Rating: </b> </p>&nbsp;
+                                <div class="rating-box d-inline-flex">
+                                    <span class="text-center">
+                                        <span class="rating-badge" style="background-color:#9acc2b;">
+                                            <b>3.5</b>
+                                            <span class="light"> /5</span>
+                                        </span>
+
+
+                                    </span>
+
+                                    <a href="#" class="text-left ml-2 mt-1" onclick="addRating(-1,'STATE')">
+                                        <b><span class="d-md-block">Rate This State</span> </b>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!--<img src="../../static/app/fonts/rating.png" />-->
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p><b>Ideal duration: </b> 4 - 12 days </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>
+                                <b>Best Time: </b> October to March
+                                <a href="/state/madhya-pradesh/best-time-to-visit.html"><b> Read More </b></a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p><b>Major Airports: </b> Indore, Bhopal, Jabalpur </p>
+                        </div>
+
+
+
+
+                        <div class="col-12 col-md-6">
+                            <p>
+                                <b>Planning a Trip? <span class="clickable" onclick="openAskQuestionpage('state','madhya-pradesh')">Ask Your Question</span></b>
+                            </p>
+                        </div>
+                    </div>
+                    <!--<h6>Madhya Pradesh got its name because of its geographical position, being located in the centre of India. However,  From the historical monuments to modern amenities, culture, food and people- this state gives a taste of entire India packed within its geographical boundaries.Madhya Pradesh is one of the few states that is surrounded by other states on all its sides. It lies in the plain regions of the country and occupies one of the oldest parts of the Indian Subcontinent which was once the land of the Gonds called the Gondwana. Every twelve years the grand fair of Kumbh Mela is organised here. Madhya Pradesh has some spectacular historical places in its region, of which a temple made of glass in Indore is quite famous. Ujjain, a sacred city for the Hindus, is a renowned place in the world as it is one of 12 Jyotirlingas in India. Madhya Pradesh is particularly famous for its Khajuraho temples which exhibit the erotic sculptures depicting the ancient India Kama Sutra text. The great Sanchi Stupa constructed during King Ashoka's reign is situated here in Bhopal.The Bandhavgarh National Park which houses the Barasingha and the Tigers reserve is also located here.</h6>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align:center;font-size:40px;">About Madhya Pradesh</h1>
+    <p style="font-size:20px">
+        Madhya Pradesh got its name because of its geographical position, being located in the centre of India. However, it's tagline 'The Heart of Incredible India' has more to do with the fact that it houses facets of the whole of India into this state. From the historical monuments to modern amenities, culture, food and people- this state gives a taste of entire India packed within its geographical boundaries.
+
+        Madhya Pradesh is one of the few states that is surrounded by other states on all its sides. It lies in the plain regions of the country and occupies one of the oldest parts of the Indian Subcontinent which was once the land of the Gonds called the Gondwana. Every twelve years the grand fair of Kumbh Mela is organised here. Madhya Pradesh has some spectacular historical places in its region, of which a temple made of glass in Indore is quite famous. Ujjain, a sacred city for the Hindus, is a renowned place in the world as it is one of 12 Jyotirlingas in India. Madhya Pradesh is particularly famous for its Khajuraho temples which exhibit the erotic sculptures depicting the ancient India Kama Sutra text. The great Sanchi Stupa constructed during King Ashoka's reign is situated here in Bhopal. The Bandhavgarh National Park which houses the Barasingha and the Tigers reserve is also located here.
+    </p> <br />
+    <h1 style="text-align: center; font-size: 40px;">Top Places to Visit In Madhya Pradesh</h1>
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/sunset-over-kandariya-mahadeva-temple-picture-id508628776?k=20&m=508628776&s=612x612&w=0&h=rRhCQtckjBpgeeu5EtB3M2MhjaaCbyYWgArMRo9xBKM=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Khajuraho</h5>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/mountain-landscape-near-mandu-city-india-picture-id1266618626?k=20&m=1266618626&s=612x612&w=0&h=Hq_Fmty0Shc9SK7eY5-A0FFHGT4SiFDyzkQoxWo4X9s=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Pachmarhi</h5>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/bhedaghat-jabalpur-madhya-pradesh-view-of-river-narmada-with-marble-picture-id1266542332?k=20&m=1266542332&s=612x612&w=0&h=LsTiMlk_Sx7L1BW_p25tylwicSWm7hJqzloBITMH04I=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Bhedaghat</h5>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/gwalior-fort-picture-id481494314?k=20&m=481494314&s=612x612&w=0&h=1gY7BTazzR0khsv-pUQwQKeRBmTbVdbpIXsY9lxRyeY=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> Gwalior</h5>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/safari-vehicle-in-the-forest-in-india-picture-id1203582877?k=20&m=1203582877&s=612x612&w=0&h=vN1h3cItUwkWS7uwXa_ZfRlb-bfbdyqk_qn4hRYzca4=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Bandhavgarh National Park</h5>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/sambar-picture-id484770744?k=20&m=484770744&s=612x612&w=0&h=Zfq9tRjinACexNOVnzBpzF7KK_9IYAC1saiMBpIoDOs=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kanha National Park</h5>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center;font-size:40px;">Top Attractions In Madhya Pradesh</h1>
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/kandariya-mahadeva-temple-khajuraho-madya-pradesh-india-picture-id471458096?k=20&m=471458096&s=612x612&w=0&h=BBHID8DBC7zMd22JmVT_aMaCLeG3x1U8i42lrFqjZTc=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kandariya Mahadeva Temple</h5>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Bee Falls</h5>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/towers-of-historical-fort-picture-id539855738?k=20&m=539855738&s=612x612&w=0&h=7T2zxO62Y55F5YcbG0heVdRvNZuxuGtdjWRLdLHqxF4=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> Jahangir mahal fort</h5>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col col-sm-4">
+
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/an-ancient-ruined-fort-in-burhanpur-picture-id1273506214?k=20&m=1273506214&s=612x612&w=0&h=BtmDN_ZFubmCntHeA3bqP_MGiioureguK4WnfkJdtY4=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Burhanpur</h5>
+                    <!--<p class="card-text"> Andaman & Nicobar Islands is a little slice of paradise tucked around 1,400 km away from the east coast of mainland India. Islands are popular among tourists for their white sandy beaches. </p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/sanchi-stupa-india-picture-id469872784?k=20&m=469872784&s=612x612&w=0&h=tnQEJWNEueqjsubnyg4pU03D00KP19R-qgjke63QfpE=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Sanchi</h5>
+                    <!--<p class="card-text">Andhra Pradesh has the Bay of Bengal to its west, and it boasts of a coastline of 972km, the longest in the country. This state is widely advertised as the Kohinoor of India by the tourism department.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-4">
+            <div class="card">
+                <a href="">
+                    <img src="https://media.istockphoto.com/photos/exterior-view-of-mahakaleshwar-temple-ujjain-madhya-pradesh-india-picture-id1161558593?k=20&m=1161558593&s=612x612&w=0&h=1ItxvJTyQ3nCgSFaJib-GfaXOeVmfnZmD3Q94vkgFsg=" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Ujjain</h5>
+                    <!--<p class="card-text">Arunachal Pradesh is home to picturesque mountains, unexplored passes, tranquil lakes and famous monasteries, Arunachal Pradesh is an amazing destination for an amazing holiday.</p>
+                    <a href="#" class="btn btn-warning">Read More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

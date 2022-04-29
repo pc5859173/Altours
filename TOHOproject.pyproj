@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>TOHOproject</Name>
+    <RootNamespace>TOHOproject</RootNamespace>
+    <TestFramework>unittest</TestFramework>
+    <InterpreterId>MSBuild|env4|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a17f152b-3d82-444a-a84e-04b5946730e6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>TOHOproject.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="TOHOproject\__init__.py" />
+    <Compile Include="TOHOproject\settings.py" />
+    <Compile Include="TOHOproject\urls.py" />
+    <Compile Include="TOHOproject\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\app\vendor\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="TOHOproject\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\animate.min.css" />
+    <Content Include="app\static\app\content\bootstrap-theme.css" />
+    <Content Include="app\static\app\content\bootstrap-theme.css.map" />
+    <Content Include="app\static\app\content\bootstrap-theme.min.css" />
+    <Content Include="app\static\app\content\bootstrap.css.map" />
+    <Content Include="app\static\app\content\datepicker.css" />
+    <Content Include="app\static\app\content\fontAwesome.css" />
+    <Content Include="app\static\app\content\hero-slider.css" />
+    <Content Include="app\static\app\content\jquery-ui.css" />
+    <Content Include="app\static\app\content\jquery.mCustomScrollbar.min.css" />
+    <Content Include="app\static\app\content\meanmenu.css" />
+    <Content Include="app\static\app\content\nice-select.css" />
+    <Content Include="app\static\app\content\normalize.css" />
+    <Content Include="app\static\app\content\owl-carousel.css" />
+    <Content Include="app\static\app\content\responsive.css" />
+    <Content Include="app\static\app\content\slick.css" />
+    <Content Include="app\static\app\content\style.css" />
+    <Content Include="app\static\app\content\tooplate-style.css" />
+    <Content Include="app\static\app\fonts\banner-bg.jpg" />
+    <Content Include="app\static\app\fonts\close.png" />
+    <Content Include="app\static\app\fonts\contact-01.jpg" />
+    <Content Include="app\static\app\fonts\contact-02.jpg" />
+    <Content Include="app\static\app\fonts\contact-bg.jpg" />
+    <Content Include="app\static\app\fonts\darkmode.png" />
+    <Content Include="app\static\app\fonts\evening-event.jpg" />
+    <Content Include="app\static\app\fonts\fitness-service.jpg" />
+    <Content Include="app\static\app\fonts\flexslider-icon.eot" />
+    <Content Include="app\static\app\fonts\flexslider-icon.svg" />
+    <Content Include="app\static\app\fonts\flexslider-icon.ttf" />
+    <Content Include="app\static\app\fonts\flexslider-icon.woff" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\static\app\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\static\app\fonts\fontAwesome.css" />
+    <Content Include="app\static\app\fonts\FontAwesome.otf" />
+    <Content Include="app\static\app\fonts\heading-bg.jpg" />
+    <Content Include="app\static\app\fonts\hero-slider.css" />
+    <Content Include="app\static\app\fonts\kajal img.jpg" />
+    <Content Include="app\static\app\fonts\loading.gif" />
+    <Content Include="app\static\app\fonts\logo.png" />
+    <Content Include="app\static\app\fonts\massage-service.jpg" />
+    <Content Include="app\static\app\fonts\next.png" />
+    <Content Include="app\static\app\fonts\onlinelogomaker-042122-1127-6870.png" />
+    <Content Include="app\static\app\fonts\owl-carousel.css" />
+    <Content Include="app\static\app\fonts\place-01.jpg" />
+    <Content Include="app\static\app\fonts\place-02.jpg" />
+    <Content Include="app\static\app\fonts\place-03.jpg" />
+    <Content Include="app\static\app\fonts\place-04.jpg" />
+    <Content Include="app\static\app\fonts\prev.png" />
+    <Content Include="app\static\app\fonts\priya img.jpg" />
+    <Content Include="app\static\app\fonts\priyulll.jpg" />
+    <Content Include="app\static\app\fonts\ProjectLogo %282%29.png" />
+    <Content Include="app\static\app\fonts\rating.png" />
+    <Content Include="app\static\app\fonts\service-icon-01.1.png" />
+    <Content Include="app\static\app\fonts\service-icon-02.2.png" />
+    <Content Include="app\static\app\fonts\service-icon-02.png" />
+    <Content Include="app\static\app\fonts\service-icon-03.3.png" />
+    <Content Include="app\static\app\fonts\service-icon-03.png" />
+    <Content Include="app\static\app\fonts\suite-01.jpg" />
+    <Content Include="app\static\app\fonts\suite-02.jpg" />
+    <Content Include="app\static\app\fonts\suite-03.jpg" />
+    <Content Include="app\static\app\fonts\swiming-pool.jpg" />
+    <Content Include="app\static\app\fonts\tooplate-style.css" />
+    <Content Include="app\static\app\fonts\weather-bg.jpg" />
+    <Content Include="app\static\app\fonts\weather-icon-01.png" />
+    <Content Include="app\static\app\fonts\weather-icon-02.png" />
+    <Content Include="app\static\app\fonts\weather-icon-03.png" />
+    <Content Include="app\static\app\scripts\datepicker.js" />
+    <Content Include="app\static\app\scripts\jquery-1.11.2.min.js" />
+    <Content Include="app\static\app\scripts\main.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="app\static\app\scripts\npm.js" />
+    <Content Include="app\static\app\scripts\plugins.js" />
+    <Content Include="app\static\app\vendor\bootstrap.js" />
+    <Content Include="app\static\app\vendor\bootstrap.min.js" />
+    <Content Include="app\static\app\vendor\jquery-1.11.2.min.js" />
+    <Content Include="app\static\app\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="app\static\app\vendor\npm.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\goa.html" />
+    <Content Include="app\templates\app\goahotels.html" />
+    <Content Include="app\templates\app\destination.html" />
+    <Content Include="app\templates\app\hotelbooking.html" />
+    <Content Include="app\templates\app\lehladakh.html" />
+    <Content Include="app\templates\app\MadhyaPradesh.html" />
+    <Content Include="app\templates\app\manali.html" />
+    <Content Include="app\templates\app\odisha.html" />
+    <Content Include="app\templates\app\gangtok.html" />
+    <Content Include="app\templates\app\mathura.html" />
+    <Content Include="app\templates\app\jaipur.html" />
+    <Content Include="app\templates\app\kashmir.html" />
+    <Content Include="app\templates\app\amritsar.html" />
+    <Content Include="app\templates\app\munnar.html" />
+    <Content Include="app\templates\app\kedarnath.html" />
+    <Content Include="app\templates\app\goatourism.html" />
+    <Content Include="app\templates\app\kolkata.html" />
+    <Content Include="app\templates\app\gwalior.html" />
+    <Content Include="app\templates\app\ooty.html" />
+    <Content Include="app\templates\app\darjeeling.html" />
+    <Content Include="app\templates\app\hampi.html" />
+    <Content Include="app\templates\app\shimla.html" />
+    <Content Include="app\templates\app\holiday.html" />
+    <Content Include="app\templates\app\honeymoon.html" />
+    <Content Include="app\templates\app\family.html" />
+    <Content Include="libman.json" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\hotels.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="TOHOproject\procfile">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>0.0</Version>
+      <Description>env1 (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env2\">
+      <Id>env2</Id>
+      <Version>0.0</Version>
+      <Description>env2 (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env3\">
+      <Id>env3</Id>
+      <Version>0.0</Version>
+      <Description>env3 (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env4\">
+      <Id>env4</Id>
+      <Version>3.9</Version>
+      <Description>env4 (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
